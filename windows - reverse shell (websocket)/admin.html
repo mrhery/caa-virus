@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	
+	<title>Reverse Shell Admin</title>
+</head>
+
+<body>
+<input type="text" id="cmd" autofocus /> 
+<button id="exec">Exec</button>
+
+<hr />
+
+<pre id="result"></pre>
+
+<script>
+//var ws = new WebSocket("wss://localhost:8080/admin");
+var ws = new WebSocket("ws://localhost:8080/admin");
+var cmd = document.getElementById("cmd");
+var result = document.getElementById("result");
+var exec = document.getElementById("exec");
+
+ws.onmessage = function(response){
+	var data = JSON.parse(response.data);
+	
+	if(data.action == "result"){
+		result.innerHTML += data.result;
+	}
+}
+
+exec.addEventListener("click", function(){
+	send_cmd();
+});
+
+cmd.addEventListener("keyup", function(e){
+	if(e.keyCode == 13){
+		send_cmd();
+	}
+});
+
+function send_cmd(){
+	if(ws.readyState == 1){
+		ws.send(JSON.stringify({
+			action: "cmd",
+			cmd: cmd.value
+		}));
+		
+		result.innerHTML += "> " + cmd.value + "\n";
+		
+		cmd.value = "";
+	}else{
+		alert("Fail connecting to server.");
+	}
+}
+</script>
+</body>
+</html>

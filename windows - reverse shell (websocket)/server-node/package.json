@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "ws": "^8.16.0"
+  }
+}
