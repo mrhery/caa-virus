@@ -4,7 +4,7 @@ CAA (C# Annoying Application) virus is a simple/sample code on how to write your
 # Warning!
 You can use this code but the risk is up on you. We are not responsible to any damage or criminal activites you done by using these codes.
 
-# To-do
+# To-do (upcoming)
 - [ ] Self replicating
 - [ ] Auto start on start up
 - [ ] auto restart
