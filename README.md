@@ -3,3 +3,14 @@ CAA (C# Annoying Application) virus is a simple/sample code on how to write your
 
 # Warning!
 You can use this code but the risk is up on you. We are not responsible to any damage or criminal activites you done by using these codes.
+
+# To-do
+- [ ] Self replicating
+- [ ] Auto start on start up
+- [ ] auto restart
+- [ ] Mouse jammer
+- [ ] Keyboard jammer
+- [ ] broken screen
+- [ ] network trafic flood
+- [ ] ddos botnet
+- [ ] proxy server
