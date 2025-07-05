@@ -19,7 +19,7 @@ You can use this code but the risk is up on you. We are not responsible to any d
 - [x] mouse jammer
 - [x] keyboard jammer
 - [x] broken screen
-- [ ] storage overloading
+- [x] storage overloading
 - [ ] file remover
 - [ ] dns changer
 - [ ] network trafic flood
