@@ -27,3 +27,4 @@ You can use this code but the risk is up on you. We are not responsible to any d
 - [ ] proxy server
 - [ ] audio recorder
 - [ ] livestream webcam, audio
+- [ ] windows ad-ware
